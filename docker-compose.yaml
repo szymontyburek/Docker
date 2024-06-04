@@ -1,9 +1,9 @@
 services:
-  api:
-    build: ./api
-    container_name: api_c
+  docker:
+    build: ./docker
+    container_name: docker_c
     ports:
       - "5000:8080"
     volumes:
-      - ./api:/app
+      - ./docker:/app
       - /app/node_modules
