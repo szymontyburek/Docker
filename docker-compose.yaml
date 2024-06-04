@@ -1,0 +1,9 @@
+services:
+  docker:
+    build: ./docker
+    container_name: docker_c
+    ports:
+      - "5000:8080"
+    volumes:
+      - ./docker:/app
+      - /app/node_modules
