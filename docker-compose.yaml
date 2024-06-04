@@ -1,0 +1,9 @@
+services:
+  api:
+    build: ./api
+    container_name: api_c
+    ports:
+      - "5000:8080"
+    volumes:
+      - ./api:/app
+      - /app/node_modules
